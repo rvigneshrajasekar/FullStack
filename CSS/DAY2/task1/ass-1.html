@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <style>
+        
+        .div1
+        {
+            background-image: url(../DAY2/img9.avif);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       }
+       .loginDiv
+        {
+            width:400 ;
+            height: 400;
+            color: rgb(5, 5, 5);
+            border-radius: 30px;
+            background-color:rgb(8, 8, 8, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:rgba(8, 8, 8, 0.8);
+            position: relative;
+        }
+        .loginButton
+        {
+            width: 230px;
+            font-size: 20px;
+            background-color:green;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        input{
+            width: 230px;
+            border:none;
+            border-bottom: 1px solid rgb(250, 247, 247);
+        }
+        #button{
+            border-right: 2px solid rgb(247, 241, 241);
+        }
+        .ch{
+            display: flex;
+            width: 10px;
+        }
+        .check{
+            display: flex;
+            flex-direction: row;
+            color: black;
+        }
+        .logo
+        {
+            background-image: url(../DAY2/unnamed.jpg);
+            height: 100px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -12%;
+            border-radius: 100px;
+        }
+    </style>
+    <body>
+        <div class="div1">
+            <div class ="loginDiv"><br>
+                <div class="logo"></div>
+                    <h3 style="background:transparent;">LOGIN WINDOW</h3>
+                <input type="email" style="background:transparent"; placeholder="Your Email Address" ><br><br>
+                <input type="text,number" style="background:transparent"; placeholder="Your Password" ><br><br>
+                <div class="check">
+                    <input type="checkbox" class="ch" >Agree With<a href="">Terms&Conditions</a>
+                </div><br>
+                <input type="button" id="button"  class="loginButton"value="login">
+                </div>
+          </div>  
+    </body>
+</html>
