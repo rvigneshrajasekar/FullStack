@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcstyle.css">
+    <center><h1>Calculator using HTML and CSS</h1></center>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="enter">
+            <input id="input" type="text" readonly>
+        </div>
+        <div class="buttons">
+            <div class="button"><button id="clear">C</button></div>
+            <div class="button"><button>%</button></div>
+            <div class="button"><button id="backspace"><=</button></div>
+            <div class="button"><button id="divide">/</button></div>
+            <div class="button"><button id="seven">7</button></div>
+            <div class="button"><button id="eight">8</button></div>
+            <div class="button"><button id="nine">9</button></div>
+            <div class="button"><button id="multiply">*</button></div>
+            <div class="button"><button id="four">4</button></div>
+            <div class="button"><button id="five">5</button></div>
+            <div class="button"><button id="six">6</button></div>
+            <div class="button"><button id="subtract">-</button></div>
+            <div class="button"><button id="one">1</button></div>
+            <div class="button"><button id="two">2</button></div>
+            <div class="button"><button id="three">3</button></div>
+            <div class="button"><button id="add">+</button></div>
+            <div class="button"><button id="double-zero">00</button></div>
+            <div class="button"><button id="zero">0</button></div>
+            <div class="button"><button id="decimal">.</button></div>
+            <div class="button"><button id="equals">=</button></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.getElementById('input');
+            const buttons = document.querySelectorAll('.button button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const buttonText = button.textContent;
+                    
+                    if (buttonText === 'C') {
+                        input.value = '';
+                    } else if (buttonText === '<=') {
+                        input.value = input.value.slice(0, -1);
+                    } else if (buttonText === '=') {
+                        try {
+                            input.value = eval(input.value);
+                        } catch (error) {
+                            input.value = 'Error';
+                        }
+                    } else {
+                        input.value += buttonText;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
