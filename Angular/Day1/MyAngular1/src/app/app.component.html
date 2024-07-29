@@ -1,0 +1,23 @@
+<h1>Vignesh</h1>
+<br>
+<app-vignesh></app-vignesh>
+<br>
+Name :{{name}}
+<br> Age :{{age}}
+<br> Email:{{email}}
+<br>
+<h3>Property Binding</h3>
+Name :<input type="text" [value]="name">
+<br>
+Age :<input type="text" [value]="age">
+<br>
+Email :<input type="text" [value]="email">
+<p>Event  Binding</p>
+<button (click)="ch()" >Change name</button>
+<br><button (click)="cha()" >Change name</button>
+<br>
+<button (click)="che()" >Change name</button>
+<br>
+<img [src]="imagepath" height=" 200" width="300px" alt="">
+<br>
+<button (click)="chi()" >Change image</button>
