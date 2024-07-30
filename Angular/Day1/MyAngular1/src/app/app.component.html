@@ -1,23 +1,23 @@
-<h1>Vignesh</h1>
+<h1 [ngClass]="myClass">Structural and Attribute Example</h1>
 <br>
-<app-vignesh></app-vignesh>
+<button (click)="changeflag()">show or hide div</button>
+<div *ngIf="flag">mydiv</div><br><br>
+<button (click)="change()">show or hide </button>
+<div *ngIf="fla" [ngStyle]="Mystyle">
+
 <br>
-Name :{{name}}
-<br> Age :{{age}}
-<br> Email:{{email}}
+<ul>
+    <li *ngFor="let a of vehicle"(click)="setSelectedItem(a)">{{a}}</li>
+</ul>
 <br>
-<h3>Property Binding</h3>
-Name :<input type="text" [value]="name">
+<h2>you are selected:{{selected}}</h2>
+<div [ngSwitch]="selected">
+    <font color="green" *ngSwitchCase="'two wheeler'">bike</font>
+    <font color="green" *ngSwitchCase="'bus'">redbus</font>
+    <font color="green" *ngSwitchCase="'car'">redTaxi</font>
+    <font color="green" *ngSwitchDEfault>Invalid</font>
+</div>
 <br>
-Age :<input type="text" [value]="age">
-<br>
-Email :<input type="text" [value]="email">
-<p>Event  Binding</p>
-<button (click)="ch()" >Change name</button>
-<br><button (click)="cha()" >Change name</button>
-<br>
-<button (click)="che()" >Change name</button>
-<br>
-<img [src]="imagepath" height=" 200" width="300px" alt="">
-<br>
-<button (click)="chi()" >Change image</button>
+<button (click)="changestyle()">change style</button>
+<button (click)="changecolor()">change Color</button>
+</div>

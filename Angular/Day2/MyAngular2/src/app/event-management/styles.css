@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.title {
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.form-section {
+    flex: 3;
+    padding: 10px;
+}
+
+.list-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: green;
+}
+
+.update-btn {
+    background-color: blue;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.list-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
